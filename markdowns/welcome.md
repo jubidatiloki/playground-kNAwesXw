@@ -27,7 +27,7 @@ il sert a rendre le code plus lisible et mieux organisé. Un exemple vaut mieux 
 Supposons le cas suivant d'une pizzéria, ou il existe plusieurs sorte de pizzas(chaque pizza ayant des ingrédients différents).
 
 /* "Produit" */
-
+```  
 class Pizza {
     private String pate = "";
     private String sauce = "";
@@ -45,12 +45,12 @@ class Pizza {
         this.contenu = contenu;
     }
 }
-
+```  
 On a donc une classe pizza, qui est défini par des attributs pate, sauce et contenu.
 
 
 /* "Builder abstrait" */
-    
+```    
 abstract class PizzaBuilder {
     protected Pizza pizza;
 
@@ -66,7 +66,7 @@ abstract class PizzaBuilder {
     public abstract void buildSauce();
     public abstract void buildContenu();
 }
-
+```  
 
 On crée ensuite une classe abstraite, pizzaBuilder, qui permettra de créer différentes sortes de pizza sans avoir besoin de redefinir les attributs de chacune.
 
