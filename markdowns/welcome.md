@@ -73,7 +73,7 @@ On crée ensuite une classe abstraite, pizzaBuilder, qui permettra de créer dif
 
 
 /* "ConcreteBuilder" */
-    
+```      
 class PizzaHawaienneBuilder extends PizzaBuilder {
     public void buildPate() {
         pizza.setPate("moelleuse");
@@ -87,9 +87,9 @@ class PizzaHawaienneBuilder extends PizzaBuilder {
         pizza.setContenu("jambon+ananas");
     }
 }
-
+```  
 /* "ConcreteBuilder" */
-    
+```      
 class PizzaNorvegienneBuilder extends PizzaBuilder {
     public void buildPate() {
         pizza.setPate("pate cuite");
@@ -103,14 +103,14 @@ class PizzaNorvegienneBuilder extends PizzaBuilder {
         pizza.setContenu("saumon+mozzarella");
     }
 }
-
+```  
 
 On crée donc plusieurs classes héritant de pizzaBuilder, et qui permettent donc de définir les différents attributs constituant chaque pizza.
 
 
 
 /* "Director" */
-    
+```      
 class Serveur{
     private PizzaBuilder pizzaBuilder;
 
@@ -129,13 +129,13 @@ class Serveur{
         pizzaBuilder.buildContenu();
     }
 }
-
+```  
 On crée ensuite une classe serveur, que l'on appelle directeur, ca sera cette classe qui permettra de construire les différentes sorte de pizza.
 
 
 
 /* A customer ordering a pizza. */
-    
+```      
 public class PizzaBuilderDemo {
     public static void main(String[] args) {
         Serveur serveur = new Serveur();
@@ -148,3 +148,4 @@ public class PizzaBuilderDemo {
         Pizza pizza = serveur.getPizza();
     }
 }
+```  
