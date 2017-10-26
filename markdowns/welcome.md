@@ -8,9 +8,9 @@ Nous allons vous présenter le design pattern builder. Tout d'abord commençons 
 
 Un design pattern est un modèle de conception permettant de simplifier des problèmes couramment rencontrés lors du développement d'applications.
 On peut les séparer en 3 catégories:
-  - les modèles de création, qui permettent de déléguer à d'autres classes la construction d'objet.
-  - les modèles de structuration, qui tendent à concevoir un regroupement de classes avec des macro-composants.
-  - les modèles de comportement, qui tentent de répartir les responsbilités entre chaque classe.
+- les modèles de création, qui permettent de déléguer à d'autres classes la construction d'objet.
+- les modèles de structuration, qui tendent à concevoir un regroupement de classes avec des macro-composants.
+- les modèles de comportement, qui tentent de répartir les responsbilités entre chaque classe.
   
 Maintenant que nous avons défini ce qu'est un design pattern, revenons à notre design pattern builder.
 
