@@ -8,10 +8,11 @@ Nous allons vous présenter le design pattern builder. Tout d'abord commençons 
 
 Un design pattern est un modèle de conception permettant de simplifier des problèmes couramment rencontrés lors du développement d'applications.
 On peut les séparer en 3 catégories:
+```  
 	- les modèles de création, qui permettent de déléguer à d'autres classes la construction d'objet.
 	- les modèles de structuration, qui tendent à concevoir un regroupement de classes avec des macro-composants.
 	- les modèles de comportement, qui tentent de répartir les responsbilités entre chaque classe.
-
+```  
 Maintenant que nous avons défini ce qu'est un design pattern, revenons à notre design pattern builder.
 
 
@@ -26,7 +27,7 @@ il sert a rendre le code plus lisible et mieux organisé. Un exemple vaut mieux 
 
 Supposons le cas suivant d'une pizzéria, ou il existe plusieurs sorte de pizzas(chaque pizza ayant des ingrédients différents).
 
-/* "Produit" */
+/* produit */
 ```  
 class Pizza {
     private String pate = "";
@@ -49,7 +50,7 @@ class Pizza {
 On a donc une classe pizza, qui est défini par des attributs pate, sauce et contenu.
 
 
-/* "Builder abstrait" */
+/* builder abstrait */
 ```    
 abstract class PizzaBuilder {
     protected Pizza pizza;
@@ -72,7 +73,7 @@ On crée ensuite une classe abstraite, pizzaBuilder, qui permettra de créer dif
 
 
 
-/* "ConcreteBuilder" */
+/* builder concret */
 ```      
 class PizzaHawaienneBuilder extends PizzaBuilder {
     public void buildPate() {
@@ -88,7 +89,7 @@ class PizzaHawaienneBuilder extends PizzaBuilder {
     }
 }
 ```  
-/* "ConcreteBuilder" */
+/* builder concret */
 ```      
 class PizzaNorvegienneBuilder extends PizzaBuilder {
     public void buildPate() {
@@ -109,7 +110,7 @@ On crée donc plusieurs classes héritant de pizzaBuilder, et qui permettent don
 
 
 
-/* "Director" */
+/* Directeur */
 ```      
 class Serveur{
     private PizzaBuilder pizzaBuilder;
@@ -134,7 +135,7 @@ On crée ensuite une classe serveur, que l'on appelle directeur, ca sera cette c
 
 
 
-/* A customer ordering a pizza. */
+/* client commandant une pizza. */
 ```      
 public class PizzaBuilderDemo {
     public static void main(String[] args) {
