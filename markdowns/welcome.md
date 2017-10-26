@@ -28,7 +28,7 @@ Supposons le cas suivant d'une pizzéria, ou il existe plusieurs sorte de pizzas
 
 /* produit */
 ```  
-class Pizza {
+class **Pizza** {
     private String pate = "";
     private String sauce = "";
     private String contenu = "";
@@ -51,7 +51,7 @@ On a donc une classe pizza, qui est défini par des attributs pate, sauce et con
 
 /* builder abstrait */
 ```    
-abstract class PizzaBuilder {
+abstract class **PizzaBuilder** {
     protected Pizza pizza;
 
     public Pizza getPizza() {
@@ -74,7 +74,7 @@ On crée ensuite une classe abstraite, pizzaBuilder, qui permettra de créer dif
 
 /* builder concret */
 ```      
-class PizzaHawaienneBuilder extends PizzaBuilder {
+class **PizzaHawaienneBuilder** extends PizzaBuilder {
     public void buildPate() {
         pizza.setPate("moelleuse");
     }
@@ -90,7 +90,7 @@ class PizzaHawaienneBuilder extends PizzaBuilder {
 ```  
 /* builder concret */
 ```      
-class PizzaNorvegienneBuilder extends PizzaBuilder {
+class **PizzaNorvegienneBuilder** extends PizzaBuilder {
     public void buildPate() {
         pizza.setPate("pate cuite");
     }
@@ -111,7 +111,7 @@ On crée donc plusieurs classes héritant de pizzaBuilder, et qui permettent don
 
 /* Directeur */
 ```      
-class Serveur{
+class **Serveur**{
     private PizzaBuilder pizzaBuilder;
 
     public void setPizzaBuilder(PizzaBuilder pb) {
@@ -136,7 +136,7 @@ On crée ensuite une classe serveur, que l'on appelle directeur, ca sera cette c
 
 /* client commandant une pizza. */
 ```      
-public class PizzaBuilderDemo {
+public class **PizzaBuilderDemo** {
     public static void main(String[] args) {
         Serveur serveur = new Serveur();
         PizzaBuilder pizzaHawaienneBuilder = new PizzaHawaienneBuilder();
