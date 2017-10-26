@@ -22,7 +22,7 @@ Il sert donc à créer des objets d'une autre classe et il possede la plupart du
 Ainsi lors de la création d'un nouvel objet de la classe, les paramètres sont directement insérés sans avoir besoin de les renseignés. Pour faire simple, 
 il sert a rendre le code plus lisible et mieux organisé. Un exemple vaut mieux qu'un long discours, place à la démo.
 
-#Exemple de la pizzeria
+# Exemple de la pizzeria
 
 Supposons le cas suivant d'une pizzéria, ou il existe plusieurs sorte de pizzas(chaque pizza ayant des ingrédients différents).
 
@@ -150,7 +150,7 @@ public class PizzaBuilderDemo {
 }
 ```  
 
-#QCM
+# QCM
 
 ?[A quoi sert un design pattern?]
 -[ ] à avoir une représentation graphique d'une classe
