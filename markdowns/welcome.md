@@ -177,4 +177,4 @@ public class PizzaBuilderDemo {
 -[ ] l'I.A.
 
 ---
-Merci d'avoir suivis cette petite présentation, j'espère que vous aura plu.
+Merci d'avoir suivis cette petite présentation, nous espèrons qu'elle vous aura plu.
