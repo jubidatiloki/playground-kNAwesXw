@@ -26,7 +26,7 @@ il sert a rendre le code plus lisible et mieux organisé. Un exemple vaut mieux 
 
 Supposons le cas suivant d'une pizzéria, ou il existe plusieurs sorte de pizzas(chaque pizza ayant des ingrédients différents).
 
-/* produit */
+ produit 
 ```  
 class Pizza {
     private String pate = "";
@@ -49,7 +49,7 @@ class Pizza {
 On a donc une classe pizza, qui est défini par des attributs pate, sauce et contenu.
 
 
-/* builder abstrait */
+ builder abstrait 
 ```    
 abstract class PizzaBuilder {
     protected Pizza pizza;
@@ -72,7 +72,7 @@ On crée ensuite une classe abstraite, pizzaBuilder, qui permettra de créer dif
 
 
 
-/* builder concret */
+ builder concret 
 ```      
 class PizzaHawaienneBuilder extends PizzaBuilder {
     public void buildPate() {
@@ -88,7 +88,7 @@ class PizzaHawaienneBuilder extends PizzaBuilder {
     }
 }
 ```  
-/* builder concret */
+ builder concret 
 ```      
 class PizzaNorvegienneBuilder extends PizzaBuilder {
     public void buildPate() {
@@ -109,7 +109,7 @@ On crée donc plusieurs classes héritant de pizzaBuilder, et qui permettent don
 
 
 
-/* Directeur */
+ Directeur 
 ```      
 class Serveur{
     private PizzaBuilder pizzaBuilder;
@@ -134,7 +134,7 @@ On crée ensuite une classe serveur, que l'on appelle directeur, ca sera cette c
 
 
 
-/* client commandant une pizza. */
+ client commandant une pizza. 
 ```      
 public class PizzaBuilderDemo {
     public static void main(String[] args) {
@@ -177,4 +177,8 @@ public class PizzaBuilderDemo {
 -[ ] l'I.A.
 
 ---
-Merci d'avoir suivis cette petite présentation, nous espèrons qu'elle vous aura plu.
+Merci d'avoir suivi cette petite présentation, nous espèrons qu'elle vous aura plu.
+
+#Source
+
+soon 
