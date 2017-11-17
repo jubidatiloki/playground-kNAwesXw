@@ -234,7 +234,13 @@ public class Serveur{
 
 ::: Source
 
-source 
+https://fr.wikipedia.org/wiki/Monteur_(patron_de_conception)
+
+https://blog.xebia.fr/2016/12/28/design-pattern-builder-et-builder-sont-dans-un-bateau/
+
+https://sourcemaking.com/design_patterns/builder
+
+https://sourcemaking.com/design_patterns/builder/java/2
 
 :::
 
@@ -269,6 +275,4 @@ source
 ---
 Merci d'avoir suivi cette petite présentation, nous espèrons qu'elle vous aura plu.
 
-#Source
 
-soon 
