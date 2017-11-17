@@ -2,11 +2,6 @@
 
 Nous allons vous présenter le design pattern builder. Tout d'abord commençons par définir ce qu'est un design pattern.
 
-```javascript
-var a = 2;
-var b = 4;
-console.log(a+b);
-```
 
 # Un Design pattern, Quézako ?
 
@@ -157,6 +152,26 @@ public class PizzaBuilderDemo {
     }
 }
 ```  
+
+
+// { autofold
+  public class PizzaBuilderDemo {
+    public static void main(String[] args) {
+        Serveur serveur = new Serveur();
+        PizzaBuilder pizzaHawaienneBuilder = new PizzaHawaienneBuilder();
+        PizzaBuilder pizzaNorvegienneBuilder = new PizzaNorvegienneBuilder();
+
+        serveur.setPizzaBuilder( pizzaHawaienneBuilder);
+        serveur.constructPizza();
+
+        Pizza pizza = serveur.getPizza();
+    }
+}
+// }
+
+visible code
+
+
 
 # QCM
 
