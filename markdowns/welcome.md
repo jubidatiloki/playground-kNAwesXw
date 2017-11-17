@@ -157,6 +157,66 @@ On crée ensuite une classe serveur, que l'on appelle directeur, ca sera cette c
         this.contenu = contenu;
     }
 }
+abstract class PizzaBuilder {
+    protected Pizza pizza;
+
+    public Pizza getPizza() {
+        return pizza;
+    }
+
+    public void createNewPizzaProduct() {
+        pizza = new Pizza();
+    }
+
+    public abstract void buildPate();
+    public abstract void buildSauce();
+    public abstract void buildContenu();
+}
+class PizzaHawaienneBuilder extends PizzaBuilder {
+    public void buildPate() {
+        pizza.setPate("moelleuse");
+    }
+
+    public void buildSauce() {
+        pizza.setSauce("douce");
+    }
+
+    public void buildContenu() {
+        pizza.setContenu("jambon+ananas");
+    }
+}
+  
+class PizzaNorvegienneBuilder extends PizzaBuilder {
+    public void buildPate() {
+        pizza.setPate("pate cuite");
+    }
+
+    public void buildSauce() {
+        pizza.setSauce("huile d'olive");
+    }
+
+    public void buildContenu() {
+        pizza.setContenu("saumon+mozzarella");
+    }
+}
+class Serveur{
+    private PizzaBuilder pizzaBuilder;
+
+    public void setPizzaBuilder(PizzaBuilder pb) {
+        pizzaBuilder = pb;
+    }
+
+    public Pizza getPizza() {
+        return pizzaBuilder.getPizza();
+    }
+
+    public void constructPizza() {
+        pizzaBuilder.createNewPizzaProduct();
+        pizzaBuilder.buildPate();
+        pizzaBuilder.buildSauce();
+        pizzaBuilder.buildContenu();
+    }
+}
 // }
 
 public class PizzaBuilderDemo {
