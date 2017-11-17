@@ -139,6 +139,26 @@ On crée ensuite une classe serveur, que l'on appelle directeur, ca sera cette c
 
  client commandant une pizza. 
 ``` java runnable 
+// { autofold
+  class Pizza {
+    private String pate = "";
+    private String sauce = "";
+    private String contenu = "";
+
+    public void setPate(String pate){
+        this.pate = pate;
+    }
+
+    public void setSauce(String sauce) {
+        this.sauce = sauce;
+    }
+
+    public void setContenu(String contenu) {
+        this.contenu = contenu;
+    }
+}
+// }
+
 public class PizzaBuilderDemo {
     public static void main(String[] args) {
         Serveur serveur = new Serveur();
@@ -154,7 +174,7 @@ public class PizzaBuilderDemo {
 ```  
 
 
-::: **Source**
+::: Source
 
 source 
 
