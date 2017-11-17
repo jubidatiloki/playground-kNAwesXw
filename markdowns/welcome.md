@@ -219,8 +219,6 @@ class Serveur{
 }
 // }
 
-public class PizzaBuilderDemo {
-    
         Serveur serveur = new Serveur();
         PizzaBuilder pizzaHawaienneBuilder = new PizzaHawaienneBuilder();
         PizzaBuilder pizzaNorvegienneBuilder = new PizzaNorvegienneBuilder();
@@ -230,7 +228,7 @@ public class PizzaBuilderDemo {
 
         Pizza pizza = serveur.getPizza();
     
-}
+
 ```  
 
 
