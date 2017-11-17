@@ -2,7 +2,11 @@
 
 Nous allons vous présenter le design pattern builder. Tout d'abord commençons par définir ce qu'est un design pattern.
 
-
+```javascript
+var a = 2;
+var b = 4;
+console.log(a+b);
+```
 
 # Un Design pattern, Quézako ?
 
