@@ -220,7 +220,7 @@ class Serveur{
 // }
 
 public class PizzaBuilderDemo {
-    public static void main(String[] args) {
+    
         Serveur serveur = new Serveur();
         PizzaBuilder pizzaHawaienneBuilder = new PizzaHawaienneBuilder();
         PizzaBuilder pizzaNorvegienneBuilder = new PizzaNorvegienneBuilder();
@@ -229,7 +229,7 @@ public class PizzaBuilderDemo {
         serveur.constructPizza();
 
         Pizza pizza = serveur.getPizza();
-    }
+    
 }
 ```  
 
