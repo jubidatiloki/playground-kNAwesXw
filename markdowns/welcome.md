@@ -1,4 +1,11 @@
-# Bienvenue sur cette présentation du pattern builder !!
+# Table of Contents
+  * [Chapter 1](#chapter-1)
+  * [Chapter 2](#chapter-2)
+  * [Chapter 3](#chapter-3)
+
+# Présentation<a id="chapter-1"></a>
+
+# Bienvenue
 
 Nous allons vous présenter le design pattern builder. Tout d'abord commençons par définir ce qu'est un design pattern.
 
@@ -15,12 +22,17 @@ On peut les séparer en 3 catégories:
 Maintenant que nous avons défini ce qu'est un design pattern, revenons à notre design pattern builder.
 
 
+# Pattern Builder<a id="chapter-2"></a>
+
 # Le builderzer 
 Le builder est un design pattern appartenant à la catégorie des modèles de création.
 Il sert donc à créer des objets d'une autre classe et il possede la plupart du temps les différentes variables de la classe qu'il crée.
 
 Ainsi lors de la création d'un nouvel objet de la classe, les paramètres sont directement insérés sans avoir besoin de les renseignés. Pour faire simple, 
 il sert a rendre le code plus lisible et mieux organisé. Un exemple vaut mieux qu'un long discours, place à la démo.
+
+
+# Exemple<a id="chapter-3"></a>
 
 # Exemple de la pizzeria
 
