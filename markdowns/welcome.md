@@ -30,7 +30,7 @@ il sert a rendre le code plus lisible et mieux organisé. Un exemple vaut mieux 
 Supposons le cas suivant d'une pizzéria, ou il existe plusieurs sorte de pizzas(chaque pizza ayant des ingrédients différents).
 
  produit 
-```  
+``` java 
 class Pizza {
     private String pate = "";
     private String sauce = "";
@@ -53,7 +53,7 @@ On a donc une classe pizza, qui est défini par des attributs pate, sauce et con
 
 
  builder abstrait 
-```    
+``` java
 abstract class PizzaBuilder {
     protected Pizza pizza;
 
@@ -76,7 +76,7 @@ On crée ensuite une classe abstraite, pizzaBuilder, qui permettra de créer dif
 
 
  builder concret 
-```      
+``` java    
 class PizzaHawaienneBuilder extends PizzaBuilder {
     public void buildPate() {
         pizza.setPate("moelleuse");
@@ -92,7 +92,7 @@ class PizzaHawaienneBuilder extends PizzaBuilder {
 }
 ```  
  builder concret 
-```      
+``` java
 class PizzaNorvegienneBuilder extends PizzaBuilder {
     public void buildPate() {
         pizza.setPate("pate cuite");
@@ -113,7 +113,7 @@ On crée donc plusieurs classes héritant de pizzaBuilder, et qui permettent don
 
 
  Directeur 
-```      
+``` java 
 class Serveur{
     private PizzaBuilder pizzaBuilder;
 
@@ -140,7 +140,7 @@ On crée ensuite une classe serveur, que l'on appelle directeur, ca sera cette c
  client commandant une pizza. 
 ``` java runnable 
 // { autofold
-  class Pizza {
+  public class Pizza {
     private String pate = "";
     private String sauce = "";
     private String contenu = "";
@@ -157,7 +157,7 @@ On crée ensuite une classe serveur, que l'on appelle directeur, ca sera cette c
         this.contenu = contenu;
     }
 }
-abstract class PizzaBuilder {
+public abstract class PizzaBuilder {
     protected Pizza pizza;
 
     public Pizza getPizza() {
@@ -172,7 +172,7 @@ abstract class PizzaBuilder {
     public abstract void buildSauce();
     public abstract void buildContenu();
 }
-class PizzaHawaienneBuilder extends PizzaBuilder {
+public class PizzaHawaienneBuilder extends PizzaBuilder {
     public void buildPate() {
         pizza.setPate("moelleuse");
     }
@@ -186,7 +186,7 @@ class PizzaHawaienneBuilder extends PizzaBuilder {
     }
 }
   
-class PizzaNorvegienneBuilder extends PizzaBuilder {
+public class PizzaNorvegienneBuilder extends PizzaBuilder {
     public void buildPate() {
         pizza.setPate("pate cuite");
     }
@@ -199,7 +199,7 @@ class PizzaNorvegienneBuilder extends PizzaBuilder {
         pizza.setContenu("saumon+mozzarella");
     }
 }
-class Serveur{
+public class Serveur{
     private PizzaBuilder pizzaBuilder;
 
     public void setPizzaBuilder(PizzaBuilder pb) {
@@ -217,7 +217,7 @@ class Serveur{
         pizzaBuilder.buildContenu();
     }
 }
-// }
+// 
 
         Serveur serveur = new Serveur();
         PizzaBuilder pizzaHawaienneBuilder = new PizzaHawaienneBuilder();
