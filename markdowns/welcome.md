@@ -143,7 +143,7 @@ On crée ensuite une classe serveur, que l'on appelle directeur, ca sera cette c
 
 
  client commandant une pizza. 
-```
+``` java runnable 
 // class Pizza { autofold
   public class Pizza { 
     private String pate = "";
@@ -230,8 +230,7 @@ public class Serveur{
     }
 }
 // }
-```
-``` java runnable 
+
 public class Main{ // on remplace le nom par Main pour pouvoir etre exécutable sur tech.io
      static public void main(String[] args){
    
