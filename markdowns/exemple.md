@@ -5,7 +5,7 @@ Supposons le cas suivant d'une pizzeria, ou il existe plusieurs sorte de pizzas(
 ![diagramme de classe pizza](https://raw.githubusercontent.com/jubidatiloki/playground-kNAwesXw/master/class_diagram_pizza.png)
 
 
-# 1. class produit
+# 1. classe produit
 
 On commence par créer une class produit, ici pizza, qui sera l'élément que l'on voudra créer par la suite.
 
@@ -34,7 +34,7 @@ class Pizza {
 }
 ```  
 
-# 2. class builder abstrait 
+# 2. classe builder abstrait 
 
 On crée ensuite une classe abstraite, pizzaBuilder, qui permettra de créer différentes sortes de pizza sans avoir besoin de redefinir les attributs de chacune.
 
@@ -56,7 +56,7 @@ abstract class PizzaBuilder {
 }
 ```  
 
-# 3.  builder concret 
+# 3. classes builder concret 
 
 On crée donc plusieurs classes héritant de pizzaBuilder, qui permettent donc de définir les différents type de pizza et donc les ingrédients(pâte, sauce, contenu) les constituants.
 
@@ -94,7 +94,7 @@ class PizzaNorvegienneBuilder extends PizzaBuilder {
 ```  
 
 
-# 4. class directeur 
+# 4. classe directeur 
 
 On crée ensuite une classe directeur, serveur ici. Cette classe permettra de construire les différentes sorte de pizza.
 
