@@ -1,6 +1,6 @@
 # Exemple de la pizzeria
 
-Supposons le cas suivant d'une pizzéria, ou il existe plusieurs sorte de pizzas(chaque pizza ayant des ingrédients différents).
+Supposons le cas suivant d'une pizzeria, ou il existe plusieurs sorte de pizzas(chaque pizza ayant des ingrédients différents).
 
 ![diagramme de classe pizza](https://raw.githubusercontent.com/jubidatiloki/playground-kNAwesXw/master/class_diagram_pizza.png)
 
