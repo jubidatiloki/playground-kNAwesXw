@@ -80,7 +80,7 @@ class PizzaHawaienneBuilder extends PizzaBuilder {
 ``` java
 class PizzaNorvegienneBuilder extends PizzaBuilder {
     public void buildPate() {
-        pizza.setPate("pate cuite");
+        pizza.setPate("cuite");
     }
 
     public void buildSauce() {
@@ -122,7 +122,7 @@ class Serveur{
 
 # application
 
- client commandant une pizza. 
+ exemple d'un client commandant une pizza hawaienne et une norvégienne. 
 ``` java runnable 
 // class Pizza { autofold
   class Pizza { 
@@ -182,7 +182,7 @@ abstract class PizzaBuilder {
 // class PizzaNorvegienneBuilder { autofold
  class PizzaNorvegienneBuilder extends PizzaBuilder {
     public void buildPate() {
-        pizza.setPate("pate cuite");
+        pizza.setPate("cuite");
     }
 
     public void buildSauce() {
