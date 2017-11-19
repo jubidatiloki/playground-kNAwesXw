@@ -118,7 +118,7 @@ On crée ensuite une classe serveur, que l'on appelle directeur, ca sera cette c
  client commandant une pizza. 
 ``` java runnable 
 // class Pizza { autofold
-  public class Pizza { 
+  private class Pizza { 
     private String pate = "";
     private String sauce = "";
     private String contenu = "";
@@ -137,7 +137,7 @@ On crée ensuite une classe serveur, que l'on appelle directeur, ca sera cette c
 }
 // }
 // class PizzaBuilder { autofold
-public abstract class PizzaBuilder {
+private abstract class PizzaBuilder {
     protected Pizza pizza;
 
     public Pizza getPizza() {
@@ -154,7 +154,7 @@ public abstract class PizzaBuilder {
 }
 // }
 // class PizzaHawaienneBuilder { autofold
-public class PizzaHawaienneBuilder extends PizzaBuilder {
+private class PizzaHawaienneBuilder extends PizzaBuilder {
     public void buildPate() {
         pizza.setPate("moelleuse");
     }
@@ -169,7 +169,7 @@ public class PizzaHawaienneBuilder extends PizzaBuilder {
 }
 // }
 // class PizzaNorvegienneBuilder { autofold
-public class PizzaNorvegienneBuilder extends PizzaBuilder {
+private class PizzaNorvegienneBuilder extends PizzaBuilder {
     public void buildPate() {
         pizza.setPate("pate cuite");
     }
@@ -184,7 +184,7 @@ public class PizzaNorvegienneBuilder extends PizzaBuilder {
 }
 // }
 // class Serveur { autofold
-public class Serveur{
+private class Serveur{
     private PizzaBuilder pizzaBuilder;
 
     public void setPizzaBuilder(PizzaBuilder pb) {
@@ -204,7 +204,7 @@ public class Serveur{
 }
 // }
 
-public class Main{ // on remplace le nom par Main pour pouvoir etre exécutable sur tech.io
+private class Main{ // on remplace le nom par Main pour pouvoir etre exécutable sur tech.io
      static public void main(String[] args){
    
         Serveur serveur = new Serveur();
