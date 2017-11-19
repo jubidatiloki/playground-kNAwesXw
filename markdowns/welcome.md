@@ -218,8 +218,8 @@ public class Serveur{
     }
 }
 // }
-public class Main{
-    public static void main(String[] args){
+public class Main{ // on remplace le nom par Main pour pouvoir etre exécutable sur tech.io
+     static public void main(String[] args){
    
         Serveur serveur = new Serveur();
         PizzaBuilder pizzaHawaienneBuilder = new PizzaHawaienneBuilder();
