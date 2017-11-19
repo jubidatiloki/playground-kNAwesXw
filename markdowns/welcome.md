@@ -47,6 +47,11 @@ class Pizza {
     public void setContenu(String contenu) {
         this.contenu = contenu;
     }
+    
+    @Override
+	public String toString() {
+		return "Pizza [pate=" + pate + ", sauce=" + sauce + ", contenu=" + contenu + "]";
+	}
 }
 ```  
 On a donc une classe pizza, qui est défini par des attributs pate, sauce et contenu.
@@ -236,6 +241,7 @@ public class Main{ // on remplace le nom par Main pour pouvoir etre exécutable 
         serveur.constructPizza();
 
         Pizza pizza = serveur.getPizza();
+        System.out.println(pizza);
     }
 }
 ```  
