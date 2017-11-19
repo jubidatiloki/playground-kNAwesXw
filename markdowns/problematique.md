@@ -17,7 +17,7 @@ Pizza pizzaNorvegienne2 = new Pizza("cuite", "huile d'olive", "saumon+mozzarella
 Pizza pizzaNorvegienne3 = new Pizza("cuite", "huile d'olive", "saumon+mozzarella");
 ```
 
-On comprend assez rapidement le problème ici.
+On comprend assez rapidement le problème ici: redondance de code et risques d'erreurs élevés
 
 - solution 2 : la bonne méthode !!
 
