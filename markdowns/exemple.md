@@ -7,7 +7,7 @@ Supposons le cas suivant d'une pizzeria, ou il existe plusieurs sorte de pizzas(
 
 # 1. classe produit
 
-On commence par créer une class produit, ici pizza, qui sera l'élément que l'on voudra créer par la suite.
+On commence par créer une classe produit, ici pizza, qui sera l'élément que l'on voudra créer par la suite.
 
 ``` java 
 class Pizza {
