@@ -5,7 +5,10 @@ Supposons le cas suivant d'une pizzéria, ou il existe plusieurs sorte de pizzas
 ![diagramme de classe pizza](https://raw.githubusercontent.com/jubidatiloki/playground-kNAwesXw/master/class_diagram_pizza.png)
 
 
- produit 
+# 1. class produit
+
+On commence par créer une class produit, ici pizza, qui sera l'élément que l'on voudra créer par la suite.
+
 ``` java 
 class Pizza {
     private String pate = "";
@@ -30,10 +33,11 @@ class Pizza {
 	}
 }
 ```  
-On a donc une classe pizza, qui est défini par des attributs pate, sauce et contenu.
 
+# 2. class builder abstrait 
 
- builder abstrait 
+On crée ensuite une classe abstraite, pizzaBuilder, qui permettra de créer différentes sortes de pizza sans avoir besoin de redefinir les attributs de chacune.
+
 ``` java
 abstract class PizzaBuilder {
     protected Pizza pizza;
@@ -52,11 +56,11 @@ abstract class PizzaBuilder {
 }
 ```  
 
-On crée ensuite une classe abstraite, pizzaBuilder, qui permettra de créer différentes sortes de pizza sans avoir besoin de redefinir les attributs de chacune.
+# 3.  builder concret 
+
+On crée donc plusieurs classes héritant de pizzaBuilder, qui permettent donc de définir les différents type de pizza et donc les ingrédients(pâte, sauce, contenu) les constituants.
 
 
-
- builder concret 
 ``` java    
 class PizzaHawaienneBuilder extends PizzaBuilder {
     public void buildPate() {
@@ -72,7 +76,7 @@ class PizzaHawaienneBuilder extends PizzaBuilder {
     }
 }
 ```  
- builder concret 
+ 
 ``` java
 class PizzaNorvegienneBuilder extends PizzaBuilder {
     public void buildPate() {
@@ -89,11 +93,11 @@ class PizzaNorvegienneBuilder extends PizzaBuilder {
 }
 ```  
 
-On crée donc plusieurs classes héritant de pizzaBuilder, et qui permettent donc de définir les différents attributs constituant chaque pizza.
 
+# 4. class directeur 
 
+On crée ensuite une classe directeur, serveur ici. Cette classe permettra de construire les différentes sorte de pizza.
 
- Directeur 
 ``` java 
 class Serveur{
     private PizzaBuilder pizzaBuilder;
@@ -114,9 +118,9 @@ class Serveur{
     }
 }
 ```  
-On crée ensuite une classe serveur, que l'on appelle directeur, ca sera cette classe qui permettra de construire les différentes sorte de pizza.
 
 
+# application
 
  client commandant une pizza. 
 ``` java runnable 
