@@ -2,7 +2,7 @@
 
 Supposons le cas suivant d'une pizzéria, ou il existe plusieurs sorte de pizzas(chaque pizza ayant des ingrédients différents).
 
-![diagramme de classe pizza](https://github.com/jubidatiloki/playground-kNAwesXw/edit/master/class_diagram_pizza.JPG)
+![diagramme de classe pizza](https://github.com/jubidatiloki/playground-kNAwesXw/edit/master/class_diagram_pizza.png)
 
 
  produit 
