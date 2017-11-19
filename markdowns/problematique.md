@@ -1,18 +1,23 @@
 # introduction
 
-Imaginons, nous avons un objet complexe ayant de nombreux attribut.
+Imaginons, nous avons un objet ayant de nombreux attribut.
 
 exemple simple:
-    Chmilblic(Element eltComplex, Bidule biduleChelou, String nomImprobable, Comportement comportementInattendu)
+    Pizza(String pate, String sauce, String contenu)
     
-Notre objectif est d'instancier plusieurs fois cette classe Chmilblic. Comment faire?
+Notre objectif est d'instancier plusieurs fois cette classe Pizza. Comment faire?
 
 - solution 1 : copier-coller
 ``` java
-new Chmilblic(new Element("chassis"), new Bidule("roues"), "prototype de déplacement", new Comportement("roule"));
-new Chmilblic(new Element("chassis"), new Bidule("jambes"), "prototype de déplacement", new Comportement("marche"));
-new Chmilblic(new Element("chassis"), new Bidule("ailes"), "prototype de déplacement", new Comportement("vole"));
+Pizza pizzaHawaienne1 = new Pizza("moelleuse", "douce", "jambon+ananas");
+Pizza pizzaHawaienne2 = new Pizza("moelleuse", "douce", "jambon+ananas");
+
+Pizza pizzaNorvegienne1 = new Pizza("cuite", "huile d'olive", "saumon+mozzarella");
+Pizza pizzaNorvegienne2 = new Pizza("cuite", "huile d'olive", "saumon+mozzarella");
+Pizza pizzaNorvegienne3 = new Pizza("cuite", "huile d'olive", "saumon+mozzarella");
 ```
+
+On comprend assez rapidement le problème ici.
 
 - solution 2 : la bonne méthode !!
 
