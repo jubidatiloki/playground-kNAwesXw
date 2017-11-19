@@ -220,6 +220,12 @@ public class Main{ // on remplace le nom par Main pour pouvoir etre exécutable 
 
         Pizza pizza = serveur.getPizza();
         System.out.println(pizza);
+        
+        serveur.setPizzaBuilder( pizzaNorvegienneBuilder);
+        serveur.constructPizza();
+
+        pizza = serveur.getPizza();
+        System.out.println(pizza);
     }
 }
 ```  
