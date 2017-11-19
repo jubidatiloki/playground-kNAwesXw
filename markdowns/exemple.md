@@ -122,7 +122,8 @@ class Serveur{
 
 # application
 
- exemple d'un client commandant une pizza hawaienne et une norvégienne. 
+ Exemple d'un client commandant une pizza hawaienne et une norvégienne. 
+ 
 ``` java runnable 
 // class Pizza { autofold
   class Pizza { 
