@@ -134,6 +134,10 @@ On crée ensuite une classe serveur, que l'on appelle directeur, ca sera cette c
     public void setContenu(String contenu) {
         this.contenu = contenu;
     }
+    @Override
+	public String toString() {
+		return "Pizza [pate=" + pate + ", sauce=" + sauce + ", contenu=" + contenu + "]";
+	}
 }
 // }
 // class PizzaBuilder { autofold
