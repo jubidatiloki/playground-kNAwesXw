@@ -1,5 +1,7 @@
 title: Pattern Builder
 plan:
+- title: Introduction
+  statement: markdowns/problematique.md
 - title: pattern Builder
   statement: markdowns/pattern.md
 - title: Exemple
