@@ -286,7 +286,7 @@ https://sourcemaking.com/design_patterns/builder/java/2
 -[ ] gagner du temps
 -[x] avoir un code propre et plus lisible
 -[ ] l'ergonomie
--[ ] l'I.A.
+-[ ] une réponse située entre c et e ?
 
 ---
 Merci d'avoir suivi cette petite présentation, nous espèrons qu'elle vous aura plu.
