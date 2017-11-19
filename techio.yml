@@ -1,6 +1,10 @@
 title: Pattern Builder
 plan:
-- title: Welcome
-  statement: markdowns/welcome.md
-- title: page2
-  statement: markdowns/page2.md
+- title: pattern Builder
+  statement: markdowns/pattern.md
+- title: Exemple
+  statement: markdowns/exemple.md
+- title: Quizz
+  statement: markdowns/quizz.md
+- title: Sources
+  statement: markdowns/sources.md
