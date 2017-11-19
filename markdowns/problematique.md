@@ -13,3 +13,7 @@ new Chmilblic(new Element("chassis"), new Bidule("roues"), "prototype de déplac
 new Chmilblic(new Element("chassis"), new Bidule("jambes"), "prototype de déplacement", new Comportement("marche"));
 new Chmilblic(new Element("chassis"), new Bidule("ailes"), "prototype de déplacement", new Comportement("vole"));
 ```
+
+- solution 2 : la bonne méthode !!
+
+    **le design pattern builder**
