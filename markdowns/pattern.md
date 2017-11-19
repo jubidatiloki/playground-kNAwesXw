@@ -1,4 +1,4 @@
-Nous allons vous présenter le design pattern builder. Tout d'abord commençons par définir ce qu'est un design pattern.
+Nous allons donc vous présenter le design pattern builder. Tout d'abord commençons par définir ce qu'est un design pattern.
 
 
 # Un Design pattern, Quézako ?
