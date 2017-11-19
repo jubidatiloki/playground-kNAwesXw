@@ -8,7 +8,7 @@ exemple simple:
 Notre objectif est d'instancier plusieurs fois cette classe Chmilblic. Comment faire?
 
 - solution 1 : copier-coller
-```
+``` java
 new Chmilblic(new Element("chassis"), new Bidule("roues"), "prototype de déplacement", new Comportement("roule"));
 new Chmilblic(new Element("chassis"), new Bidule("jambes"), "prototype de déplacement", new Comportement("marche"));
 new Chmilblic(new Element("chassis"), new Bidule("ailes"), "prototype de déplacement", new Comportement("vole"));
