@@ -2,6 +2,9 @@
 
 Supposons le cas suivant d'une pizzéria, ou il existe plusieurs sorte de pizzas(chaque pizza ayant des ingrédients différents).
 
+![diagramme de classe pizza](hhtps://github.com/jubidatiloki/playground-kNAwesXw/edit/master/class_diagram_pizza.jpg)
+
+
  produit 
 ``` java 
 class Pizza {
@@ -229,3 +232,4 @@ public class Main{ // on remplace le nom par Main pour pouvoir etre exécutable 
     }
 }
 ```  
+
