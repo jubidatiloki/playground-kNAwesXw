@@ -2,3 +2,5 @@ title: Pattern Builder
 plan:
 - title: Welcome
   statement: markdowns/welcome.md
+- title: page2
+  statement: markdowns/page2.md
